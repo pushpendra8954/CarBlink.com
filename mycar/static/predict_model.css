@@ -1,0 +1,132 @@
+.main-p{
+  color: #fff;
+}
+.feature-bg{
+  color: #484848;
+  text-align: initial;
+  padding-bottom: 15px;
+  padding-top: 75px;
+  padding-left: 20px;
+  background-color: #e1e1e1;
+}
+
+/* search-bar */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+@media screen and (max-width: 990px){
+.searchwrap {
+  padding: 40px 0;
+}
+}
+.searchwrap {
+background: url(/static/image/search-bg.jpg) no-repeat;
+background-size: cover;
+padding: 100px 0;
+height: 800px;
+}
+.searchwrap h3 {
+text-align: center;
+font-size: 30px;
+color: #fff;
+}
+.searchwrap p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+@media screen and (max-width: 990px){
+.searchbar {
+  padding: 20px 5px 20px 5px;
+}
+}
+.searchbar {
+  margin-top: 40px;
+  background-color: #fff;
+  /* background: rgba(255,255,255,0.3); */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 990px){
+.searchbar div.row {
+  padding: 0;
+}
+}
+.searchbar .row {
+  margin: 0;
+}
+@media screen and (max-width: 990px){
+.searchbar div {
+  padding: 0 15px;
+}
+}
+.searchbar div {
+  padding: 0 1px;
+}
+@media screen and (max-width: 990px){
+.searchbar .form-control {
+  margin-bottom: 15px;
+}
+}
+.searchbar .form-control {
+  height: 50px;
+  border-radius: 0;
+  padding: 13px 15px;
+  /* border: none; */
+  font-size: 18px;
+}
+.searchbar select.form-control, .searchblack select.form-control {
+padding: 12px 15px 13px 15px;
+line-height: 25px;
+}
+
+@media screen and (max-width: 990px){
+.searchbar .form-control {
+  margin-bottom: 15px;
+}
+}
+.searchbar .form-control {
+height: 50px;
+border-radius: 10px;
+padding: 13px 15px;
+/* border: none; */
+font-size: 18px;
+}
+
+@media screen and (max-width: 990px){
+.col-md-6 .aboutinfo {
+  max-width: none;
+  padding: 50px;
+}
+}
+

@@ -1,0 +1,58 @@
+{% extends 'base.html' %} 
+{% block title %} Checkout {% endblock title %}
+{%block body%}
+<div class="container">
+    {% if user.is_authenticated %}
+    <div class="col-sm-12 empty-cart-cls text-center my-2">
+    <h3>Your Wishlist</h3>
+    <button class="btn btn-secondary cart1 float-right">Clear Wishlist</button>
+    <ul class="list-group my-4" id="items">
+    </ul>
+  </div>
+</div>
+      {% else %}
+        <div class="alert alert-warning" role="alert">
+            Please Login First!
+          </div>
+      {% endif %}
+{%endblock body%}
+{% block js %}
+<script>
+  if(localStorage.getItem('cart')==null)
+  {
+    var cart={};
+  }
+  else
+  {
+    cart=JSON.parse(localStorage.getItem('cart'));
+  }
+var sum = 0;
+var totalprice = 0;
+if ($.isEmptyObject(cart))
+{
+    //if object is empty
+  mystr = `<p>Your is empty, please add some items to your cart before checking out!</p>`
+  $('#items').append(mystr);
+}
+for(item in cart)
+{
+  let itemprice=cart[item][2];
+  let name=cart[item][1];
+  let qty=cart[item][0];
+  sum=sum+qty;
+  totalprice=totalprice+qty*itemprice;
+  mystr=`<center><li class="list-group-item col-sm-3 text-center" style="background-color: black; color: white;">${name}</li></center><br>`
+  $('#items').append(mystr);
+  console.log(cart);
+}
+  $('.cart1').click(function()
+  {
+    cart=JSON.parse(localStorage.getItem('cart'));
+    localStorage.clear();
+    cart={};
+    localStorage.setItem('cart',JSON.stringify(cart));
+    document.getElementById('cart').innerHTML=Object.keys(cart).length;
+    location.reload(true);
+  });
+</script>
+{% endblock %}

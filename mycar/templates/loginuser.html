@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}Student Log In {% endblock title %}
+{%block body%}
+{%load static%}
+<link rel="stylesheet" href="{% static 'style1.css' %}">
+<link rel="stylesheet" href="{% static 'auth.css' %}">
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="{% static 'style_1.js' %}"></script>
+
+<div class="contact-section tab-box">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-7 col-md-12 bg-img">
+              <div class="informeson">
+                  <div class="typing">
+                      <h1>Welcome To CarBlink</h1>
+                  </div>
+                  <p>Find Your Favorite Car In A Minute</p>
+              </div>
+          </div>
+          <div class="col-lg-5 col-md-12 form-section">
+              <div class="login-inner-form">
+                  <div class="details">
+                      <a href="index.html">
+                        <h3 style="font-size: 40px;">CarBlink</h3>
+                      </a>
+                      <h3>Sign Into Your Account</h3>
+                      <form method="post" action="/loginuser" class="row g-3 needs-validation" novalidate style="margin:5px auto">
+                        {% csrf_token %}
+                          <div class="form-group form-box">
+                            <label for='username'>Username</label>
+                              <input type="email" id="username1" name="username1" class="form-control" placeholder="Email Address" aria-label="Email Address" required>
+                          </div>
+                          <div class="form-group form-box">
+                            <label for='password'>Password</label>
+                              <input type="password" id="password1" name="password1" style="background-color: #fff important;" class="form-control" autocomplete="off" placeholder="Password" aria-label="Password" required>
+                          </div>
+                          <div class="form-group">
+                            <input type='submit' id='do_login' value='LOGIN' title='LOGIN' />
+                          </div>
+                        </form>
+                          <p>Don't have an account?<a href="/registeruser"> Register here</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{%endblock body%}

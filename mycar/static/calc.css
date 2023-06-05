@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+    position: relative;
+  }
+  
+  .calculate-form {
+    margin-top: 65px;
+    /* position: absolute; */
+    top: 40%;
+    left: 50%;
+    /* transform: translate(-50%, -40%); */
+  }
+  
+  #loading,
+  #result {
+    display: none;
+  }
+  
+  .container-image {
+   
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../static/image/calc-bg.jpg) no-repeat center
+        center/cover;
+      
+  }
+  .form-control{
+    border-radius: 1%;
+    background-color: rgba(50,51,56,0.5);
+    color: #fff;
+  }
+  .container-bg{
+    height: 680px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../static/image/text_drive.avif) no-repeat center
+      center/cover;
+  }

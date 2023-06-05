@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block title %}User Log In {% endblock title %}
+{%block body%}
+{%load static%}
+<link rel="stylesheet" href="../static/style1.css">
+<link rel="stylesheet" href="../static/auth.css">
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../vendor/jquery/jquery.js" rel="stylesheet">
+
+<script src="../static/style_1.js"></script>
+
+<div class="contact-section tab-box">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-7 col-md-12 bg-img">
+              <div class="informeson">
+                  <div class="typing">
+                      <h1>Welcome To CarBlink</h1>
+                  </div>
+                  <p>Find Your Favorite Car In A Minute</p>
+              </div>
+          </div>
+          <div class="col-lg-5 col-md-12 form-section">
+              <div class="login-inner-form">
+                  <div class="details">
+                        <h3 style="font-size: 40px;">CarBlink</h3>
+                      <h3>Create An Account</h3>
+                      <form method="post" action="/registeruser" class="row g-3 needs-validation" novalidate style="margin:5px auto">
+                        {% csrf_token %}
+                          <div class="form-box">
+                              <input type="name" id="fname" name="fname" class="form-control" placeholder="Full Name" aria-label="Email Address" required>
+                          </div>
+                          <div class="form-box">
+                            <input type="email" id="your_emal" name="your_email" class="form-control" placeholder="Email Address" aria-label="Email Address" required>
+                          </div>
+                          <div class="form-box">
+                              <input type="password" style="background-color: #fff important;" id="password"  name="password" class="form-control" autocomplete="off" placeholder="Password" aria-label="Password" required>
+                          </div>
+                          <div class="form-box">
+                            <input type="password" style="background-color: #fff important;" id="cnf_pass"  name="cnf_pass" class="form-control" autocomplete="off" placeholder="Confirm Password" aria-label="Confirm Password" required>
+                        </div>
+                          <div class="">
+                              <button type="submit" class="btn-md btn-theme w-100 mt-5">Create An Account</button>
+                          </div>
+                          <p> Already a Member?<a href="/loginuser"> Log In</a></p>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{%endblock body%}

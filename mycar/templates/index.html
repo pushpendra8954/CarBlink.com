@@ -1,0 +1,628 @@
+{% extends 'base.html' %} 
+{% block title %} Home {% endblock title %}
+{%block body%}
+{%load static%}
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'fontawesome.css' %}">
+<link rel="stylesheet" href="{% static 'templatemo-onix-digital.css' %}">
+<link rel="stylesheet" href="{% static 'animated.css' %}">
+<link rel="stylesheet" href="{% static 'owl.css' %}">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="{% static 'predict_model.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../bootstrap-footer-01/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<main>
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="owl-carousel owl-banner">
+                <div class="item header-text">
+                  <h6>Welcome to CarBlink</h6>
+                  <h2>Find <em>The Best</em> Car <span>For You</span></h2>
+                  <p class="main-p">We can help you find the best car.Check our review, compare modals and find cars for sell.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#contact">Message Us Now</a>
+                    </div>
+                    <div class="call-button">
+                      <!-- <a href="#"><i class="fa fa-phone"></i> 010-020-0340</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>Online Booking A Test Drive</h6>
+                  <h2>We <em>Provide</em> The Test Drive <span>Services</span></h2>
+                  <p class="main-p">We are dedicated to providing quality service, customer satisfaction at a great value in multiple locations offering convenient hours.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <!-- <a href="#services">Our Services</a> -->
+                    </div>
+                    <div class="call-button">
+                      <!-- <a href="#"><i class="fa fa-phone"></i> 090-080-0760</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>Video Tutorials</h6>
+                  <h2>Watch <em>our videos</em> for your <span>Dream Car</span></h2>
+                  <p class="main-p">Please <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little via PayPal if this digital marketing HTML template is useful for you. Thank you.</p>
+                  <div class="down-buttons">
+                    <div class="main-blue-button-hover">
+                      <a href="#video">Watch Videos</a>
+                    </div>
+                    <div class="call-button">
+                      <!-- <a href="#"><i class="fa fa-phone"></i> 050-040-0320</a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="../static/image/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="../static/image/services-left-dec.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2><span>Today's Featured</span></h2>
+            <span>FInd Your Perfect Car</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <div class="icon"><img src="../static/image/thar-view.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>MAHINDRA THAR</li>
+                  <li>Rs9.99 - 12.99 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href="" style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/scorpio-view.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>MAHINDRA SCORPIO N</li>
+                  <li>Rs13.54 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href="" style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/creta-view.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>HYUNDAI CRETA</li>
+                  <li>Rs7.19 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href=""style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Audi A4.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>AUDI A4</li>
+                  <li>Rs13.54 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href="" style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Honda Amaze.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>HONDA AMAZE</li>
+                  <li>Rs7.19 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href=""style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Mahindra TUV300.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>MAHINDRA TUV300</li>
+                  <li>Rs13.54 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href="" style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Maruti Baleno.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>MARUTI BALENO</li>
+                  <li>Rs7.19 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href=""style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Maruti-wagon.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>MARUTI WAGON</li>
+                  <li>Rs13.54 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href="" style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/MG Hector.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>MG HECTOR</li>
+                  <li>Rs7.19 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href=""style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Jeep Grand Cherokee.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>JEEP GRAND CHROKEE</li>
+                  <li>Rs7.19 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href=""style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Tata Harrier.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>TATA HARRIER</li>
+                  <li>Rs7.19 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href=""style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"><img src="../static/image/Hyundai Venue.webp" alt=""></div>
+              <div class="feature-bg">
+                <ul>
+                  <li>HYUNDAI VENUE</li>
+                  <li>Rs7.19 - 15.13 Lakh*</li>
+                  <li style="font-size: 12px;">Avg Ex-Showroom Price</li>
+                </ul>
+                <a href=""style="font-size: 14px;">Add To Cart</a>
+              </div>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 mt-5" style="padding-bottom: 100px;">
+    <h2 class="mb-4" style="text-align: center;">
+      Popular Brands
+      </h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/datsun.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/honda.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/hyundai.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/kia.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/mahindra.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/maruti.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/mercedes-benz.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/mg.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/nissan.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/renault.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/tata.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-md-2">
+              <img src="../static/image/brand-img/toyota.avif" height="auto" width="auto" class="d-block w-100" alt="...">
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+  <div id="about" class="about-us section" style="padding-bottom: 100px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="left-image">
+            <img src="../static/image/newabout.jpg" alt="Two Girls working together">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2 style="font-size: 52px;">How To <em>Buy</em> &amp; <span>Sale</span> A Car</h2>
+            <p>Award-winning, family owned dealership of new and pre-owned vehicles with several locations across the city. Lowest prices and the best customer service guaranteed.</p>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="count-title">
+                      <ul>
+                        <li>Best Car Deals</li>
+                        <li>Compare Price</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="count-title">
+                      <ul>
+                        <li>Sell Your Car</li>
+                        <li>Book A Test Drive</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="fact-item">
+                  <div class="count-area-content">
+                    <div class="count-title">
+                      <ul>
+                        <li>Car Dealers</li>
+                        <li>Satisfied Clients</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="bg-image" class="about-us section" style="padding-bottom: 60px;">
+    <div class="container-float">
+            <div class="hero"></div>
+    </div>
+  </div>
+
+  <div id="video" class="our-videos section">
+    <div class="videos-left-dec">
+      <img src="../static/image/videos-left-dec.png" alt="">
+    </div>
+    <div class="videos-right-dec">
+      <img src="../static/image/videos-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-8">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/vhuMQoKv-r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>Mahindra Thar</h4></a>
+                            <span>Latest 2023</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/gabwgoYfDP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>MAHINDRA XUV 700</h4></a>
+                            <span>latest 2023</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/rhqzuF7Cyfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>  HYUNDAI VENUE</h4></a>
+                            <span>Latest 2023</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/2PU1aul41P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <div class="overlay-effect">
+                            <a href="#"><h4>MARUTI SUZUKI BREZZA</h4></a>
+                            <span>Latest 2023</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4">
+                  <div class="menu">
+                    <div class="active">
+                      <div class="thumb">
+                        <img src="../static/image/video-thumb-01.png" alt="">
+                        <div class="inner-content">
+                          <h4>Mahindra Thar</h4>
+                          <span>Lestest 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="../static/image/video-thumb-02.png" alt="">
+                        <div class="inner-content">
+                          <h4>MAHINDRA XUV 700</h4>
+                          <span>latest 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="../static/image/video-thumb-03.png" alt="Marketing">
+                        <div class="inner-content">
+                          <h4>HYUNDAI VENUE</h4>
+                          <span>Latest 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <img src="../static/image/video-thumb-04.png" alt="SEO Work">
+                        <div class="inner-content">
+                          <h4>MARUTI SUZUKI BREZZA</h4>
+                          <span>Latest 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Feel free to <em>Contact</em> us via the <span>Map form</span></h2>
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14308.656130489659!2d82.0823164!3d26.2887819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99a3eb1e7c07f78f!2sKamla%20Nehru%20Institute%20of%20Technology%2C%20Sultanpur%20(U.P.)!5e0!3m2!1sen!2sin!4v1676211932040!5m2!1sen!2sin" width="1120" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-dec">
+      <img src="../static/image/contact-dec.png" alt="">
+    </div>
+    <div class="contact-left-dec">
+      <img src="../static/image/contact-left-dec.png" alt="">
+    </div>
+  </div>
+
+  <div class="footer-dec">
+    <img src="../static/image/footer-dec.png" alt="">
+  </div>
+
+  <footer style="background-color: #212529;">
+    <div class="container">
+      <div class="row" style="padding-top: 30px;">
+        <div class="col-lg-3">
+          <div class="about footer-item">
+            <div class="logo">
+              <a href="#">
+                CARBLINK.COM
+              </a>
+            </div>
+            <a href="#">carblink021@gmail.com</a>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://wa.me/+91 8954465600"><i class="fa fa-whatsapp"></i></a></li>
+              <li><a href="mailto:support@code.buddy021.com"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="services footer-item">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Book A Text Drive</a></li>
+              <li><a href="#">Social Media</a></li>
+              <li><a href="#">Find Car</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="community footer-item">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Business Ideas</a></li>
+              <li><a href="#">Sell My Car</a></li>
+              <li><a href="#">Help And Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="subscribe-newsletters footer-item">
+            <h4>Subscribe Newsletters</h4>
+            <p>Get our latest news and ideas to your inbox</p>
+            <form action="#" method="get">
+              <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+              <button type="submit" id="form-submit" class="main-button "><i class="fa fa-paper-plane-o"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright">
+            <p>Copyright © 2023 carblink.com, Ltd. All Rights Reserved. 
+            <br>
+          </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  
+ 
+</main>
+{%endblock body%}
+{% block js %}
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+
+  <script src="../static/owl-carousel.js"></script>
+  <script src="../static/animation.js"></script>
+  <script src="../static/imagesloaded.js"></script>
+  <script src="../static/custom.js"></script>
+
+<script>
+  // Acc
+    $(document).on("click", ".naccs .menu div", function() {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+          $(".naccs .menu div").removeClass("active");
+          $(".naccs ul li").removeClass("active");
+
+          $(this).addClass("active");
+          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+          var listItemHeight = $(".naccs ul")
+            .find("li:eq(" + numberIndex + ")")
+            .innerHeight();
+          $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+  </script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<!-- <script>
+  if(localStorage.getItem('cart')==null)
+  {
+    var cart={};
+  }
+  else
+  {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    updateCart(cart);
+  }
+  $('.divpr').on('click', 'button.cart', function() {
+    var idstr=this.id.toString();
+    if(cart[idstr]!=undefined)
+    {
+      qty=cart[idstr][0]+1;
+      console.log(cart)
+    }
+    else
+    {
+      qty=1;
+      name=document.getElementById('name'+idstr).innerHTML;
+      price=document.getElementById('price'+idstr).innerHTML;
+      cart[idstr]=[qty,name,parseInt(price)];
+      console.log(cart)
+    }
+    updateCart(cart);
+  });
+  function updateCart(cart)
+  {
+    var sum=0;
+    for(var item in cart)
+    {
+      sum=sum+cart[item][0];
+    }
+    localStorage.setItem('cart',JSON.stringify(cart));
+    document.getElementById('cart').innerHTML=sum;
+  }
+</script> -->
+{% endblock %}

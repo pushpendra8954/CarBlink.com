@@ -1,0 +1,122 @@
+{%extends 'base.html'%}
+{%block title%}Find Car{%endblock title%}
+{%block body%}
+{%load static%}
+<link rel="stylesheet" href="{% static 'templatemo-onix-digital.css' %}">
+<link rel="stylesheet" href="{% static 'predict_model.css' %}">
+<div class="container-fluid searchwrap">
+  <div class="container">
+    <h3>Find A Car According Your Need</h3>
+    <div class="searchbar">
+      <form action="/result" method="POST">
+        {% csrf_token %}
+      <div class="row mb-4">
+        <div class="col-md-4">
+         <label for="price" class="formbold-form-label" style="color:#872936;"><b>Enter Car Price</b> </label>
+          <input type="number" min="200000" max="100000000" name="price" id="price" class="form-control" placeholder="Enter Price">
+        </div>
+        <div class="col-md-4">
+          <label for="dis" class="formbold-form-label" style="color:#872936;"><b>Enter Car Displacement</b> </label>
+          <input type="number" min="600" max="4000" name="dis" id="dis" class="form-control" placeholder="Enter Displacement">
+        </div>
+        <div class="col-md-4">
+          <label for="cyl" class="formbold-form-label" style="color:#872936;"><b>Enter Car Cylinder</b> </label>
+          <input type="number" min="2" max="20" name="cyl" id="cyl" class="form-control" placeholder="Enter Cylinder">
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+         <label for="driv" class="formbold-form-label" style="color:#872936;"><b>Enter Car Drive Type</b> </label>
+         <select class="form-control" id="driv">
+          <option selected>Select Drive Type</option>
+          <option value="0">RWD</option>
+          <option value="1">FWD</option>
+          <option value="4">AWD</option>
+        </select>
+        </div>
+        <div class="col-md-4">
+          <label for="emm" class="formbold-form-label" style="color:#872936;"><b>Enter Car Emmision Type</b> </label>
+          <select class="form-control" id="emm">
+            <option selected>Select Emission</option>
+            <option value="6">BS VI</option>
+            <option value="4">BS IV</option>
+            <option value="3">BS III</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="fuel" class="formbold-form-label" style="color:#872936;"><b>Enter Car Fuel Type</b> </label>
+          <select class="form-control" id="fuel">
+            <option selected>Select Fuel Type</option>
+            <option value="0">Petrol</option>
+            <option value="1">CNG</option>
+            <option value="2">Diesel</option>
+            <option value="4">CND + Petrol</option>
+            <option value="5">Hybrid</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <label for="seating" class="formbold-form-label" style="color:#872936;"><b>Enter Seating Capacity</b> </label>
+          <input type="number" min="2" max="20" name="seating" id="seating" class="form-control">
+         </div>
+        <div class="col-md-4">
+          <label for="doors" class="formbold-form-label" style="color:#872936;"><b>Enter Car Doors</b> </label>
+          <input type="number" min="2"max="4" name="doors" id="doors" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="gears" class="formbold-form-label" style="color:#872936;"><b>Enter Car Gears</b> </label>
+          <input type="number" min="4"max="15" name="gears" id="gears" class="form-control" placeholder="Enter Gears">
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <label for="body" class="formbold-form-label" style="color:#872936;"><b>Enter Car Body Type</b> </label>
+          <select class="form-control" id="body">
+           <option selected>Select Body Type</option>
+           <option value="0">Crossover</option>
+           <option value="1">Hatchback</option>
+           <option value="2">Sedan</option>
+           <option value="3">MPV</option>
+           <option value="4">MUV</option>
+           <option value="5">SUV</option>
+           <option value="6">Coupe</option>
+           <option value="7">Sedan + Coupe</option>
+           <option value="8">Convertible</option>
+         </select>
+         </div>
+        <div class="col-md-4">
+          <label for="type1" class="formbold-form-label" style="color:#872936;"><b>Enter Car Type</b> </label>
+          <select class="form-control" id="type1">
+            <option selected>Select Drive Type</option>
+            <option value="1">Manual</option>
+            <option value="2">Automatic</option>
+            <option value="3">CVT</option>
+            <option value="0">DCT</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="abs" class="formbold-form-label" style="color:#872936;"><b>Enter ABS Choice</b> </label>
+          <select class="form-control" id="abs">
+            <option selected>Select ABS Choice</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+        </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{%endblock body%}
+</html>
